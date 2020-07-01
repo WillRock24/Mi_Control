@@ -7,35 +7,59 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a la APP Control de Ingreso"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#01675D"
-        android:textSize="19sp"
+        android:layout_marginBottom="40dp"
+        android:text="Bienvenido a Mi_Control"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#D700897B"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="373dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="36dp"
+        android:text="La App para registrar su ingreso de trabajo"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#2196F3"
+        android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/boton_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/boton_1"
         android:layout_width="183dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="388dp"
-        android:background="#FFEB3B"
+        android:layout_height="50dp"
+        android:layout_marginBottom="144dp"
+        android:background="#60009688"
         android:onClick="onClick"
         android:text="Registrarse"
         android:textColor="#000000"
         android:textColorHint="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="172dp"
+        android:layout_height="224dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ballot_qualification" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
