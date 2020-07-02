@@ -11,10 +11,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="20dp"
-        android:text="Ingrese los siguientes datos:"
+        android:text="@string/ingrese_los_siguientes_datos"
         android:textColor="#01675D"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -31,9 +31,10 @@
         android:layout_marginStart="60dp"
         android:layout_marginBottom="20dp"
         android:ems="10"
-        android:hint="Nombre"
+        android:autofillHints=""
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/cedula"
+        android:hint="@string/nombre"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -43,9 +44,10 @@
         android:layout_marginStart="60dp"
         android:layout_marginBottom="20dp"
         android:ems="10"
-        android:hint="Cedula"
+        android:autofillHints=""
         android:inputType="number"
         app:layout_constraintBottom_toTopOf="@+id/f_ingreso"
+        android:hint="@string/cedula"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -55,9 +57,10 @@
         android:layout_marginStart="60dp"
         android:layout_marginBottom="20dp"
         android:ems="10"
-        android:hint="Fecha de Ingreso (dd/mm/aa)"
+        android:autofillHints=""
         android:inputType="date"
         app:layout_constraintBottom_toTopOf="@+id/temperatura"
+        android:hint="@string/fecha_de_ingreso_dd_mm_aa"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -67,9 +70,10 @@
         android:layout_marginStart="60dp"
         android:layout_marginBottom="40dp"
         android:ems="10"
-        android:hint="Temperatura"
+        android:hint="@string/temperatura"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/b_enviar"
+        android:importantForAutofill="no"
         app:layout_constraintStart_toStartOf="parent" />
 
 
@@ -77,12 +81,12 @@
         android:id="@+id/b_enviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginEnd="52dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="60dp"
         android:layout_marginBottom="100dp"
         android:backgroundTint="#60009688"
         android:onClick="onClick"
-        android:text="Enviar"
+        android:text="@string/enviar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

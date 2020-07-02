@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Mi_Control</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="los_datos_registrados_son">Los Datos Registrados son:</string>
+    <string name="nombre">Nombre</string>
+    <string name="cedula">Cedula</string>
+    <string name="fecha_de_ingreso_dd_mm_aa">Fecha de Ingreso (dd/mm/aa)</string>
+    <string name="ingrese_los_siguientes_datos">Ingrese los siguientes datos:</string>
+    <string name="enviar">Enviar</string>
 </resources>

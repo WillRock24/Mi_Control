@@ -9,16 +9,17 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="358dp"
-        android:layout_height="31dp"
-        android:text="Los Datos Registrados son:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/los_datos_registrados_son"
         android:textColor="#01675D"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/v1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
 
     <TextView
         android:id="@+id/v1"
@@ -26,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="20dp"
-        android:gravity="left"
+        android:gravity="start"
         android:textAlignment="gravity"
         android:textColor="#009688"
         android:textSize="20sp"
@@ -40,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="20dp"
-        android:gravity="left"
+        android:gravity="start"
         android:textAlignment="gravity"
         android:textColor="#009688"
         android:textSize="20sp"
@@ -54,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="20dp"
-        android:gravity="left"
+        android:gravity="start"
         android:textAlignment="gravity"
         android:textColor="#009688"
         android:textSize="20sp"
@@ -68,12 +69,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="224dp"
-        android:gravity="left"
+        android:gravity="start"
         android:textAlignment="gravity"
         android:textColor="#009688"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="onClick"
+
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
