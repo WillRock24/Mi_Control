@@ -23,8 +23,8 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="373dp"
-        android:layout_height="54dp"
+        android:layout_width="371dp"
+        android:layout_height="65dp"
         android:layout_marginBottom="36dp"
         android:text="La App para registrar su ingreso de trabajo"
         android:textAlignment="center"
